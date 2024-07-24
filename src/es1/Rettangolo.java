@@ -11,7 +11,20 @@ public class Rettangolo {
         this.altezza = altezza;
     }
 
-    public Rettangolo() {
+    // 2° consegna
+    public static void stampaDueRettangoli(Rettangolo rettangolo1, Rettangolo rettangolo2) {
+
+        System.out.println("Rettangolo 1: ");
+        rettangolo1.stampaRettangolo();
+        System.out.println("rettangolo 2: ");
+        rettangolo2.stampaRettangolo();
+
+        double sommaPerimetri = rettangolo1.getPerimetro() + rettangolo2.getPerimetro();
+        double sommaAree = rettangolo1.getArea() + rettangolo2.getArea();
+
+        System.out.println("Somma dei perimetri: " + sommaPerimetri);
+        System.out.println("Somma delle aree: " + sommaAree);
+
     }
 
     // Metodi
@@ -30,21 +43,5 @@ public class Rettangolo {
         System.out.println("Metodo stampaRettangolo: ");
         System.out.println("Perimetro: " + getPerimetro());
         System.out.println("Area: " + getArea());
-    }
-
-    // 2° consegna
-    public void stampaDueRettangoli(Rettangolo rettangolo1, Rettangolo rettangolo2) {
-
-        System.out.println("Rettangolo 1: ");
-        rettangolo1.stampaRettangolo();
-        System.out.println("rettangolo 2: ");
-        rettangolo2.stampaRettangolo();
-
-        double sommaPerimetri = rettangolo1.getPerimetro() + rettangolo2.getPerimetro();
-        double sommaAree = rettangolo1.getArea() + rettangolo2.getArea();
-
-        System.out.println("Somma dei perimetri: " + sommaPerimetri);
-        System.out.println("Somma delle aree: " + sommaAree);
-
     }
 }
