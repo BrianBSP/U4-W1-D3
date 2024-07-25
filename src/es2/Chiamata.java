@@ -24,8 +24,8 @@ public class Chiamata {
     @Override
     public String toString() {
         return "Chiamata{" +
-                "numeroChiamato='" + numeroChiamato + '\'' +
-                ", durata=" + durata + "minuti" +
+                "Numero Chiamato='" + numeroChiamato + '\'' +
+                ", durata= " + durata + " minuti" +
                 '}';
     }
 }
